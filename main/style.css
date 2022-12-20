@@ -25,12 +25,12 @@ h1 {
 }
 #chess-logo-container {
     margin: 5px 0 0 5px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
 }
 .chess-row {
-    background-color: blue;
+    background-color: transparent;
 }
 #chess-row-2 {
     margin-top: -4px;
@@ -38,8 +38,8 @@ h1 {
 }
 .logo-tile {
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 #logo-tile-1{margin-right:-4px;}#logo-tile-3{margin-right:-4px;}
