@@ -64,4 +64,16 @@ function normal() {
         whiteTimerOpSecond.innerHTML = "0" + whiteSecond
     }
 }
-setInterval(normal, 1000)
+normalFunction = setInterval(normal, 1000)
+
+function checkData() {
+    if (whiteMinute == 0 && whiteSecond == 0) {
+        clearInterval(normalFunction)
+        alert("Preto venceu")
+    }
+    else if (blackMinute == 0 && blackSecond == 0) {
+        clearInterval(normalFunction)
+        alert("Branco venceu")
+    }
+}
+setInterval(checkData, 500)
