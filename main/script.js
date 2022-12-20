@@ -30,6 +30,11 @@ function reset() {
     blackTimerOpSecond.innerHTML = defaultTimerValueSecond + "0"
     whiteTimerOpMinute.innerHTML = defaultTimerValueMinute
     whiteTimerOpSecond.innerHTML = defaultTimerValueSecond + "0"
+
+    blackMinute = defaultTimerValueMinute
+    blackSecond = defaultTimerValueSecond
+    whiteMinute = defaultTimerValueMinute
+    whiteSecond = defaultTimerValueSecond
 }
 
 function normal() {
@@ -52,6 +57,8 @@ function normal() {
         whiteTimerOpSecond.innerHTML = whiteSecond
     }
 
-    console.log(blackMinute + ":" + blackSecond)
+    if(blackSecond < 10) {
+        blackTimerOpSecond.innerHTML = "0" + blackSecond
+    }
 }
 setInterval(normal, 1000)
