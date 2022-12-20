@@ -23,12 +23,18 @@
     </div>
 
     <div id="timer-container">
-        <div id="timers">
-            <div class="timer" id="timer1">
-                <p id="op1" class="timer-op">0:00</p>
+        <div id="buttons-n-timers">
+            <div id="buttons">
+                <button class="button" onclick="timer_change()">Continuar</button>
+                <button class="button" onclick="reset()">Reiniciar</button>
             </div>
-            <div class="timer" id="timer2">
-                <p id="op2" class="timer-op">0:00</p>
+            <div id="timers">
+                <div class="timer" id="timer1">
+                    <p id="op1" class="timer-op"><spam id="op1-m">45</spam>:<spam id="op1-s">00</spam></p>
+                </div>
+                <div class="timer" id="timer2">
+                    <p id="op2" class="timer-op"><spam id="op2-m">45</spam>:<spam id="op2-s">00</spam></p>
+                </div>
             </div>
         </div>
     </div>
