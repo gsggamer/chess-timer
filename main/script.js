@@ -49,7 +49,7 @@ function normal() {
     }
     else if(time == "white") {
         whiteSecond -= 1
-        if(whiteSecond <= 0) {
+        if(whiteSecond < 0) {
             whiteMinute -= 1
             whiteSecond = 59
         }
