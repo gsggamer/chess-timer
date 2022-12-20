@@ -35,6 +35,9 @@ function reset() {
     blackSecond = defaultTimerValueSecond
     whiteMinute = defaultTimerValueMinute
     whiteSecond = defaultTimerValueSecond
+
+    clearInterval(normalFunction)
+    normalFunction = setInterval(normal, 1000)
 }
 
 function normal() {
@@ -70,10 +73,12 @@ function checkData() {
     if (whiteMinute == 0 && whiteSecond == 0) {
         clearInterval(normalFunction)
         alert("Preto venceu")
+        clearInterval(checkDataFunction)
     }
     else if (blackMinute == 0 && blackSecond == 0) {
         clearInterval(normalFunction)
         alert("Branco venceu")
+        clearInterval(checkDataFunction)
     }
 }
-setInterval(checkData, 500)
+checkDataFunction = setInterval(checkData, 500)
