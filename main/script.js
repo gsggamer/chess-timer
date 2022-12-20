@@ -60,5 +60,8 @@ function normal() {
     if(blackSecond < 10) {
         blackTimerOpSecond.innerHTML = "0" + blackSecond
     }
+    if(whiteSecond < 10) {
+        whiteTimerOpSecond.innerHTML = "0" + whiteSecond
+    }
 }
 setInterval(normal, 1000)
